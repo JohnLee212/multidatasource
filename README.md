@@ -1,2 +1,2 @@
 # multidatasource
-这个测试MySQL多数据源整合Mybatis
+Spring boot整合Mybatis实现MySQL多数据切换
