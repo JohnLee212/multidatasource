@@ -1,0 +1,29 @@
+server:
+  port: 8091
+spring:
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+mysql:
+  datasource:
+    master:
+      url: jdbc:mysql://47.114.94.33:3306/nacos?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+      username: root
+      password: qingshi@123
+    slave:
+      url: jdbc:mysql://47.114.94.33:3306/nacos-config?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+      username: root
+      password: qingshi@123
+    slaveTwo:
+      url: jdbc:mysql://47.114.94.33:3306/chime_stone?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+      username: root
+      password: qingshi@123
+
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+  returnPageInfo: check
